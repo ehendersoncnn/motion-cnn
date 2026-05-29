@@ -241,6 +241,62 @@ body {
 }
 
 /* ─── Code Blocks ────────────────────────────────────────────────────────────── */
+.code-block {
+  position: relative;
+  margin: 1.5rem 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-subtle);
+  background: #0d1117;
+  overflow: hidden;
+}
+
+.code-block__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 0.5rem 0.875rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.code-block__language {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+}
+
+.code-block__copy {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-default);
+  background: var(--color-surface-card);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.code-block__copy:hover {
+  background: var(--color-surface-hover);
+}
+
+.code-block__content pre,
+.code-block__content .shiki {
+  margin: 0 !important;
+  padding: 1.25rem 1.5rem !important;
+  overflow-x: auto;
+  background: transparent !important;
+  font-family: var(--font-mono) !important;
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+}
+
 [data-rehype-pretty-code-figure] pre {
   background: var(--color-surface-raised) !important;
   border: 1px solid var(--color-border-subtle);

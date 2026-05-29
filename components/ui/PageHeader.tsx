@@ -11,17 +11,13 @@ export function PageHeader({ title, subtitle, label }: PageHeaderProps) {
     <header className="section-divider">
       <ContentColumn>
         {label && (
-          <p className="text-label-mono mb-4">
-            {label}
-          </p>
+          <p className="text-label-mono mb-3">{label}</p>
         )}
-        <h1 className="text-display text-[2.5rem] lg:text-[3rem] mb-4">
+        <h1 className="text-display text-[2.5rem] lg:text-[3rem] mb-5 max-w-3xl">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-body max-w-2xl">
-            {subtitle}
-          </p>
+          <p className="text-body max-w-2xl">{subtitle}</p>
         )}
       </ContentColumn>
     </header>

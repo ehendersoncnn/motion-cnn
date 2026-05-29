@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { PageHeader } from '@/components/ui/PageHeader'
 import { SectionBlock } from '@/components/ui/SectionBlock'
 import { ContentColumn } from '@/components/ui/ContentColumn'
-import { DoDont } from '@/components/ui/DoDont'
+import { PrincipleCard } from '@/components/ui/PrincipleCard'
 
 export const metadata: Metadata = {
   title: 'Motion Principles',
@@ -109,31 +109,7 @@ export default function PrinciplesPage() {
       {principles.map((p) => (
         <SectionBlock key={p.name}>
           <ContentColumn padded={false} className="section-padding pt-0">
-            <div className="flex gap-8">
-              <div
-                className="text-display text-6xl shrink-0 leading-none select-none"
-                style={{ color: 'var(--color-border-strong)', width: 56 }}
-              >
-                {p.number}
-              </div>
-
-              <div className="flex-1">
-                <div className="flex items-baseline gap-4 mb-1 flex-wrap">
-                  <h2 className="text-heading text-[22px] lg:text-[26px]">
-                    {p.name}
-                  </h2>
-                  <span className="text-meta italic">
-                    {p.tagline}
-                  </span>
-                </div>
-
-                <p className="text-body mb-6 max-w-2xl">
-                  {p.description}
-                </p>
-
-                <DoDont dos={p.dos} donts={p.donts} />
-              </div>
-            </div>
+            <PrincipleCard {...p} />
           </ContentColumn>
         </SectionBlock>
       ))}

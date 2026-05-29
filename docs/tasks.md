@@ -28,13 +28,13 @@ Cursor should follow tasks sequentially within each phase. Check off tasks as th
 
 ---
 
-## Phase 2 — UI Component Primitives
+## Phase 2 — UI Component Primitives ✅
 
-- [ ] Create `components/ui/PageHeader.tsx` — section title + subtitle
-- [ ] Create `components/ui/SectionBlock.tsx` — content section wrapper
-- [ ] Create `components/ui/CodeBlock.tsx` — syntax highlighted code
-- [ ] Create `components/ui/PlatformTabs.tsx` — iOS/Android/Web/CTV tabs
-- [ ] Create `components/ui/PrincipleCard.tsx` — motion principle card
+- [x] Create `components/ui/PageHeader.tsx` — section title + subtitle
+- [x] Create `components/ui/SectionBlock.tsx` — content section wrapper
+- [x] Create `components/ui/CodeBlock.tsx` — syntax highlighted code
+- [x] Create `components/ui/PlatformTabs.tsx` — iOS/Android/Web/CTV tabs
+- [x] Create `components/ui/PrincipleCard.tsx` — motion principle card
 
 ---
 
