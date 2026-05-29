@@ -17,14 +17,14 @@ Cursor should follow tasks sequentially within each phase. Check off tasks as th
 
 ---
 
-## Phase 1 — Design Tokens & Navigation Foundation
+## Phase 1 — Design Tokens & Navigation Foundation ✅
 
-- [ ] Create `lib/motion-tokens.ts` with all duration, easing, and scale tokens
-- [ ] Create `lib/navigation.ts` with full site nav structure
-- [ ] Update `app/globals.css` with CNN design tokens (colors, typography, spacing)
-- [ ] Update `app/layout.tsx` with root layout, Sidebar, dark mode provider
-- [ ] Create `components/nav/Sidebar.tsx` — left navigation with section links
-- [ ] Create `components/nav/TopBar.tsx` — mobile nav header
+- [x] Create `lib/motion-tokens.ts` with all duration, easing, and scale tokens
+- [x] Create `lib/navigation.ts` with full site nav structure
+- [x] Update `app/globals.css` with CNN design tokens (colors, typography, spacing)
+- [x] Update `app/layout.tsx` with root layout, Sidebar, dark mode provider
+- [x] Create `components/nav/Sidebar.tsx` — left navigation with section links
+- [x] Create `components/nav/TopBar.tsx` — mobile nav header
 
 ---
 
